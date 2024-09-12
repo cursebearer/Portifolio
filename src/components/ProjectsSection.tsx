@@ -19,8 +19,8 @@ const projects = [
   { 
     id: 3, 
     name: "Acervo de Filmes/Series", 
-    description: "Um site com varias informacoes sobre filmes e series consumindo a API do TMDB onde os usuarios podem deixar suas avaliacoes/opinioes sobre o filme", 
-    url: "https://github.com/yourusername/project3", 
+    description: "Um site com varias informacoes sobre filmes e series consumindo a API do TMDB onde os usuarios podem deixar suas avaliacoes/opinioes sobre o filme(ainda nao finalizado)", 
+    url: "https://github.com/cursebearer/Movies-Website", 
     image: "/images/icon-3.jpg"
   },
 ]
