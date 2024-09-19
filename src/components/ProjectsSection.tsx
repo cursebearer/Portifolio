@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "./ui/card"
+import { Card, CardDescription, CardFooter, CardHeader, CardTitle } from "./ui/card"
 
 const projects = [
   { 
@@ -12,9 +12,9 @@ const projects = [
   { 
     id: 2, 
     name: "To do list", 
-    description: "Another awesome project", 
-    url: "https://github.com/yourusername/project2", 
-    image: "/images/user.jpg"
+    description: "Uma To do list basica feita em Typescript e NextJs", 
+    url: "https://github.com/cursebearer/todo-list-typescript-next.js", 
+    image: "/images/todo.png"
   },
   { 
     id: 3, 
@@ -22,6 +22,20 @@ const projects = [
     description: "Um site com varias informacoes sobre filmes e series consumindo a API do TMDB onde os usuarios podem deixar suas avaliacoes/opinioes sobre o filme(ainda nao finalizado)", 
     url: "https://github.com/cursebearer/Movies-Website", 
     image: "/images/icon-3.jpg"
+  },
+  { 
+    id: 4, 
+    name: "Site para a ONG Pincel de Luz", 
+    description: "Projeto referente a disciplina de aprendizagem colaborativa de nível 3 do Bacharel em Engenharia de Software na Catolica SC, onde foi criado uma aplicacao web para a ONG", 
+    url: "https://github.com/cursebearer/NGO-Pincel-de-Luz", 
+    image: "/images/icon_ong.jpg"
+  },
+  { 
+    id: 5, 
+    name: "Calculadora em flutter/dart", 
+    description: "Calculadora simples feita em Flutter e Dart para um projeto da faculdade", 
+    url: "https://github.com/cursebearer/flutter-calculator", 
+    image: "/images/calc.jpg"
   },
 ]
 

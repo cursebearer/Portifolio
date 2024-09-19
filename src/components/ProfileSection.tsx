@@ -12,9 +12,10 @@ export function ProfileSection() {
         />
       </div>
       <div>
-        <h2 className="text-2xl font-semibold">Teste</h2>
-        <p className="text-muted-foreground">teste</p>
+        <h2 className="text-2xl font-semibold">Rafael Pavesi dos Passos</h2>
       </div>
     </section>
   )
 }
+
+//  <p className="text-muted-foreground">teste</p>
