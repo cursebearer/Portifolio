@@ -5,7 +5,7 @@ export function ProfileSection() {
     <section className="mb-12 flex items-center space-x-6">
       <div className="relative w-32 h-32 rounded-full overflow-hidden">
         <Image
-          src="/images/user.jpg"
+          src="/images/me.jpg"
           alt="Profile picture"
           layout="fill"
           objectFit="cover"

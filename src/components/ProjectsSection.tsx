@@ -6,35 +6,38 @@ const projects = [
     id: 1, 
     name: "Elden Ring Discord Bot", 
     description: "Um bot de discord que consome uma API com as informacoes do jogo Elden Ring utilizando a biblioteca discord.js", 
-    url: "https://github.com/cursebearer/Elden-ring-discord-bot", 
+    url_git: "https://github.com/cursebearer/Elden-ring-discord-bot", 
     image: "/images/icon-1.avif"
   },
   { 
     id: 2, 
     name: "To do list", 
-    description: "Uma To do list basica feita em Typescript e NextJs", 
-    url: "https://github.com/cursebearer/todo-list-typescript-next.js", 
+    description: "Uma To do list basica feita em Typescript, NextJs e Firebase", 
+    url_git: "https://github.com/cursebearer/todolist-ts-and-nextjs",
     image: "/images/todo.png"
   },
   { 
     id: 3, 
     name: "Acervo de Filmes/Series", 
-    description: "Um site com varias informacoes sobre filmes e series consumindo a API do TMDB onde os usuarios podem deixar suas avaliacoes/opinioes sobre o filme(ainda nao finalizado)", 
-    url: "https://github.com/cursebearer/Movies-Website", 
+    description: "Um site sobre filmes e series consumindo a API do TMDB usando Ts e NextJs (ainda nao finalizado)", 
+    url_git: "https://github.com/cursebearer/Movies-Website", 
+    url_domain: "",
     image: "/images/icon-3.jpg"
   },
   { 
     id: 4, 
     name: "Site para a ONG Pincel de Luz", 
     description: "Projeto referente a disciplina de aprendizagem colaborativa de nível 3 do Bacharel em Engenharia de Software na Catolica SC, onde foi criado uma aplicacao web para a ONG", 
-    url: "https://github.com/cursebearer/NGO-Pincel-de-Luz", 
+    url_git: "https://github.com/cursebearer/NGO-Pincel-de-Luz", 
+    url_domain: "https://pinceldeluz.com",
     image: "/images/icon_ong.jpg"
   },
   { 
     id: 5, 
     name: "Calculadora em flutter/dart", 
     description: "Calculadora simples feita em Flutter e Dart para um projeto da faculdade", 
-    url: "https://github.com/cursebearer/flutter-calculator", 
+    url_git: "https://github.com/cursebearer/flutter-calculator", 
+    url_domain: "",
     image: "/images/calc.jpg"
   },
 ]
@@ -59,10 +62,20 @@ export function ProjectsSection() {
               <CardTitle>{project.name}</CardTitle>
               <CardDescription>{project.description}</CardDescription>
             </CardHeader>
-            <CardFooter>
-              <a href={project.url} target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
+            <CardFooter className="flex flex-col items-start">
+              <a href={project.url_git} target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
                 Ver no GitHub
               </a>
+              {project.url_domain && (
+                <a
+                  href={project.url_domain}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-primary hover:underline mt-2"
+                >
+                  Ver Website
+                </a>
+              )}
             </CardFooter>
           </Card>
         ))}

@@ -8,20 +8,22 @@ export function AboutMeSection() {
         <CardContent className="pt-6">
           <p className="text-muted-foreground">
           Sou uma pessoa aberta ao aprendizado e com vontade de agregar ao ambiente em que eu estiver. <br/>
-
-          Me formei em 2022 no ensino médio no Colégio Santo Antônio em Joinville e em Técnico em Análise e Desenvolvimento de Sistemas no SENAI/SC.<br/>
-
-          Atualmente estou cursando a graduação em Engenharia de Software na PUC- Pontifícia Universidade Católica SC em Joinville.<br/>
-
+          <br></br>
+          - Técnico em Análise e Desenvolvimento de Sistemas no SENAI/SC<br/>
+          <br></br>
+          - Intercâmbio na escola EC New York em 2024<br/>
+          <br></br>
+          - Cursando Bacharel Engenharia de Software na Católica SC<br/>
+          <br></br>
           Ferramentas/linguagens que tenho conhecimento:<br/>
-
-          - JavaScript, HTML, CSS<br/>
-          - Node.js, C++<br/>
+          <br></br>
+          - JavaScript/Typescript<br/>
+          - Node.js<br/>
+          - React<br/>
+          - Next.js<br/>
           - MySQL<br/>
-          - Figma, Canva<br/>
-          - Microsoft Word, PowerPoint, Excel<br/>
+          - Rest API<br/>
           - Inglês B2 upper intermediate(Certificado EC New York)<br/>
-          - Intercâmbio EC New York<br/>
           </p>
         </CardContent>
       </Card>
