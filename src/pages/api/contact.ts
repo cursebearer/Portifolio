@@ -1,20 +1,18 @@
 import nodemailer from 'nodemailer';
+import type { NextApiRequest, NextApiResponse } from 'next'
 
-interface ContactForm {
-  name: string;
-  email: string;
-  message: string;
+type ContactFormData = {
+  name: string
+  email: string
+  message: string
 }
 
 export default async function handler(
-    req: { method: string; body: ContactForm }, 
-    res: {
-      status: (statusCode: number) => { json: (data: any) => void; end: () => void }; 
-      end: () => void;
-    }
-  ) {
+  req: NextApiRequest,
+  res: NextApiResponse
+) {
   if (req.method === 'POST') {
-    const { name, email, message } = req.body;
+    const { name, email, message }: ContactFormData = req.body
 
     const transporter = nodemailer.createTransport({
       service: 'gmail', 
