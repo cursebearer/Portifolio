@@ -7,7 +7,6 @@ import { Textarea } from "./ui/textarea"
 import { Button } from "./ui/button"
 import '../styles/global.css'
 
-
 export function ContactSection() {
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
@@ -43,7 +42,7 @@ export function ContactSection() {
   }
 
   return (
-    <section>
+    <section id="contact" className="mb-12">
       <h2 className="text-2xl font-semibold mb-4">Entre em Contato</h2>
       <Card>
         <CardHeader>
@@ -65,12 +64,11 @@ export function ContactSection() {
               <Textarea id="message" value={message} onChange={(e) => setMessage(e.target.value)} required />
             </div>
             <Button type="submit" disabled={isSubmitting}>
-                {isSubmitting && ( 
-                  <span className="loading loading-spinner"></span> 
-                )}
-                {!isSubmitting && (
-                  'Enviar Mensagem' 
-                )}
+              {isSubmitting ? (
+                <span className="loading loading-spinner"></span>
+              ) : (
+                'Enviar Mensagem'
+              )}
             </Button>
           </form>
         </CardContent>

@@ -13,9 +13,9 @@ export function ProfileSection() {
       </div>
       <div>
         <h2 className="text-2xl font-semibold">Rafael Pavesi dos Passos</h2>
+        <p className="text-muted-foreground">Desenvolvedor Web e estudante de Engenharia de Software</p>
       </div>
     </section>
   )
 }
 
-//  <p className="text-muted-foreground">teste</p>
