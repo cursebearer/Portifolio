@@ -40,6 +40,14 @@ const projects = [
     url_domain: "",
     image: "/images/calc.jpg"
   },
+  { 
+    id: 6, 
+    name: "Conversor de moedas em flutter/dart", 
+    description: "Conversor de moedas usando API em Flutter e Dart para um projeto da faculdade", 
+    url_git: "https://github.com/cursebearer/flutter-converter", 
+    url_domain: "",
+    image: "/images/conversor.png"
+  },
 ]
 
 export function ProjectsSection() {
